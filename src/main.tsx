@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
-import { temaClaro,temaEscuro,GlobalStyle} from './styles'
+import { temaEscuro,GlobalStyle} from './styles'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
