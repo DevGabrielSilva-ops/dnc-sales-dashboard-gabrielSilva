@@ -1,21 +1,33 @@
-import styled from "styled-components";
 
-const AreaRegistrar = styled.div`
-    background: #333;
-`
-
-const RegistrarImagem = styled.div`
-    background-image: url(/login-imagem.png);
-    background-size: cover;
-    height: 100vh;
-    width: 50vw;
-`
+import { Box, Container, Grid } from "@mui/material";
+import { BannerImagem } from "@/components"
 
 function Registrar() {
   return (
     <>
-     <AreaRegistrar>Registrar</AreaRegistrar>
-     <RegistrarImagem/>
+     <Box>
+          <Grid container>
+            
+            <Grid
+              size={{ xs: 12, sm: 6 }}
+              sx={{ alignItems: "center", display: "flex", height: "100vh" }}
+            >
+              <Container maxWidth="sm">
+                    <h1>CADASTRO</h1>
+              </Container>
+            </Grid>
+    
+            <Grid
+              size={{ xs: 12, sm: 6 }}
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
+              <BannerImagem/>
+            </Grid>
+    
+          </Grid>
+        </Box>
+
+  
     </>
   )
 }
