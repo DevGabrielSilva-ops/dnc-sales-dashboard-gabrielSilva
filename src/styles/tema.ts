@@ -1,6 +1,6 @@
-import { Tema } from "@/types";
+import { Theme } from "@/types";
 
-export const temaClaro: Tema  = {
+export const temaClaro: Theme  = {
     appBackground:  '#FFF',
     appColor:  '#000',
     appDefaultStroke: '#E0E0E0',
@@ -43,7 +43,7 @@ export const temaClaro: Tema  = {
     }
 }
 
-export const temaEscuro: Tema  = {
+export const temaEscuro: Theme  = {
     appBackground:  '#060B26',
     appColor:  '#FFF',
     appDefaultStroke: '#21497D',

@@ -1,4 +1,4 @@
-export interface Tema {
+export interface Theme {
     appBackground: string
     appColor: string
     appDefaultStroke: string
