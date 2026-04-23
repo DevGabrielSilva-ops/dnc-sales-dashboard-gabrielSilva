@@ -1,4 +1,5 @@
 export * from './BannerImagem'
+export {default as ListaAvatar} from './avatarList'
 export {default as FormularioComponente} from './FormularioComponente'
 export {default as Header} from './Header'
 export * from './StyledButton'
