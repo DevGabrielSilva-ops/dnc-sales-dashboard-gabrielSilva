@@ -1,4 +1,4 @@
-import { CardComponent, Header, AvatarList } from "@/components"
+import { CardComponent, Header, ListaAvatar } from "@/components"
 import { Container } from "@mui/material"
 import { currencyConverter } from "@/utils"
 
@@ -28,7 +28,7 @@ function Home() {
      <Container maxWidth="lg">
         <CardComponent>CARD</CardComponent>
         <CardComponent>
-              <AvatarList listData={ListaVendedores} />
+              <ListaAvatar listData={ListaVendedores} />
         </CardComponent>
      </Container>
 

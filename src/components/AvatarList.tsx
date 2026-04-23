@@ -7,7 +7,7 @@ import { AvatarsListProps } from "@/types";
 
 
 
-function AvatarList(props: AvatarsListProps) {
+function ListaAvatar(props: AvatarsListProps) {
     return(
         <>
           {
@@ -40,4 +40,4 @@ function AvatarList(props: AvatarsListProps) {
     )
 }
 
-export default AvatarList
+export default ListaAvatar
