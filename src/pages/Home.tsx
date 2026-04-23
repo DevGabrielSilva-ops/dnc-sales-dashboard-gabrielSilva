@@ -1,4 +1,4 @@
-import { CardComponent, Header, ListaAvatar } from "@/components"
+import { CardComponent, CustomTable, Header, ListaAvatar } from "@/components"
 import { Container } from "@mui/material"
 import { currencyConverter } from "@/utils"
 
@@ -22,6 +22,29 @@ function Home() {
         subtitle: currencyConverter(500.00)
       }
   ]
+
+  const DadosTable = {
+      headers: ['Name', 'Email','Actions'],
+      rows: [
+        [
+          <span>Nome 1</span>,
+          <span>Nome@gmail.com</span>,
+          <button>Action</button>
+        ],
+
+         [
+          <span>Nome 2</span>,
+          <span>Nome2@gmail.com</span>,
+          <button>Action</button>
+        ],
+
+          [
+          <span>Nome 3</span>,
+          <span>Nome3@gmail.com</span>,
+          <button>Action</button>
+        ]
+      ]
+  }
   return (
     <>
      <Header />
@@ -29,6 +52,9 @@ function Home() {
         <CardComponent>CARD</CardComponent>
         <CardComponent>
               <ListaAvatar listData={ListaVendedores} />
+        </CardComponent>
+        <CardComponent>
+              <CustomTable headers={DadosTable.headers} rows={DadosTable.rows} />
         </CardComponent>
      </Container>
 
