@@ -1,6 +1,7 @@
-import { CardComponent, CustomTable, Header, ListaAvatar } from "@/components"
+import { CardComponent, CustomTable, Header, ListaAvatar, CustomChart } from "@/components"
 import { Container } from "@mui/material"
 import { currencyConverter } from "@/utils"
+
 
 function Home() {
   const ListaVendedores = [
@@ -45,17 +46,26 @@ function Home() {
         ]
       ]
   }
+
+   
   return (
     <>
      <Header />
      <Container maxWidth="lg">
         <CardComponent>CARD</CardComponent>
+        
         <CardComponent>
               <ListaAvatar listData={ListaVendedores} />
         </CardComponent>
+       
         <CardComponent>
               <CustomTable headers={DadosTable.headers} rows={DadosTable.rows} />
         </CardComponent>
+
+        <CardComponent>
+              <CustomChart labels={['janeiro','Fevereiro','Março']} data={[1000.12,2456.26,2587.24]} type="bar" />
+        </CardComponent>
+        
      </Container>
 
     </>
